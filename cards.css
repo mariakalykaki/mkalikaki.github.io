@@ -1,0 +1,533 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    background: radial-gradient(#6f4040,#262626);
+}
+
+
+
+
+/*card layout CSS*/
+
+
+
+
+.card-image{
+    width: 100%;
+    display: block;
+    min-height: 260px;
+    max-height: 260px;
+}
+
+.cards{
+    margin: 0 auto;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(295px,1fr));
+    grid-gap: 20px;
+}
+
+.card{
+    box-shadow: 0  0 3px black;
+}
+
+.card-content{
+    line-height: 1.5;
+    font-size: 0.9em;
+    padding: 15px;
+    background: #6f4040;
+    min-height: 195px;
+}
+
+.card-info{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    background: #beb2b2;
+    border-bottom: 2px solid black;
+
+}
+
+.card-info i{
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+.card-link{
+    text-decoration: none;
+    color: black;
+}
+
+.card-link:hover{
+    color:#ddcccc
+}
+
+
+.seemore-btn{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px 25px;
+    background: #ddcccc;
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 600px; /* i have to make it responisve with media*/
+    
+    
+}
+.seemore-btn:hover{
+    background: #8d6060;
+}
+
+#portfolio-section{
+    margin-bottom: 200px;
+}
+
+
+.mywork-title{
+    margin-bottom: 90px;
+    margin-left: 520px; /*make it responsive*/
+}
+
+/* Contact CSS*/
+
+
+
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 50px 100px;
+    
+}
+
+.contact .content{
+    text-align: center;
+    max-width: 800px;
+}
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.container .contact-info{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .contact-info .box{
+    position: relative;
+    padding: 20px 0px;
+    display: flex;
+}
+
+.container .contact-info .box .icon{
+min-width: 60px;
+height: 60px;
+background: white;
+display: flex;
+justify-content: center;
+align-items: center;
+border-radius: 50%;
+font-size: 22px;
+
+}
+
+.container .contact-info .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color:white;
+    flex-direction: column;
+    font-weight: 300;
+
+}
+
+.contact-form{
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+
+}
+
+.contact-form .input-box{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+.contact-form .input-box input, 
+.contact-form .input-box textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    resize: none;
+}
+
+.contact-form .input-box span{
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    position: absolute;
+    left: 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+
+.contact-form .input-box input:focus ~ span,
+.contact-form .input-box input:valid ~ span,
+.contact-form .input-box textarea:focus ~ span,
+.contact-form .input-box textarea:focus ~ span{
+    color:red;
+    transform: translateY(-20px);
+    font-size: 12px;
+}
+
+
+.contact-form .input-box input[type="submit"]{
+    width: 100px;
+    background: red;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media(max-width:991px){
+    .contact{
+        padding: 50px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container .contact-info{
+        margin-bottom: 40px;
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+/*skills CSS*/
+
+
+
+
+
+#skills-section{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-direction: column;
+    margin-bottom: 100px;
+    
+}
+.skills-container{
+    display: flex;
+    flex-direction: row;
+    
+    align-items: center;
+    
+}
+.col1{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+.col2{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+
+
+
+
+/* Header CSS */
+
+.links li{
+    list-style: none;
+
+}
+
+.links li a,.downloadcv,.dropdown-menu li a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+}
+
+.links li a:hover,.dropdown-menu li a:hover{
+    color:black;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+    margin-top: 20px;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.navbar .logo{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.navbar .links{
+    display: flex;
+    gap:2rem;
+}
+
+.navbar .toggle-btn{
+    cursor: pointer;
+    font-size: 1.5rem;
+    color:white;
+    display:none;
+}
+
+
+.downloadcv{
+    background-color: orange;
+    padding: 0.5rem 1rem;
+    color: #fff;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.downloadcv:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    overflow: hidden;
+    width: 300px;
+    background: rgba(255,255,255,0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    right: 2rem;
+    top:60px;
+    height: 0;
+    transition: height 0.2s cubic-bezier(0.175,0.885,0.32,1.275);
+    
+
+}
+.dropdown-menu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+    
+}
+
+
+
+.dropdown-menu .downloadcv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.dropdown-menu.open{
+    height: 240px;
+}
+
+@media(max-width:992px){
+    .navbar .links,.navbar .downloadcv{
+        display: none;
+    }
+
+    .navbar .toggle-btn{
+        display: block;
+    }
+
+    .dropdown-menu{
+        display: block;
+    }
+}
+
+
+@media(max-width:576px){
+    .dropdown-menu{
+        left: 2rem;
+        width: unset;
+    }
+}
+
+
+#title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    height: calc(100vh-60px);
+    text-align: center;
+    margin-top: 300px;
+}
+
+#title h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#title h5{
+    margin-bottom: 375px;
+}
+
+
+
+/*contact2 CSS*/
+
+
+
+
+
+
+
+.row{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.contact-left{
+    flex-basis: 35%;
+}
+
+.contact-right{
+    flex-basis: 60%;
+}
+
+.contact-left p{
+    margin-top: 30px;
+}
+
+.contact-left p i {
+    color: #fff;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons{
+    margin-top: 30px;
+}
+
+.social-icons a{
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform  0.5s;
+}
+
+.social-icons a:hover{
+    color: #fff;
+    transform: translateY(-5px);
+}
+
+
+.btn{
+    display: block;
+    border: 1px solid #6f4040;
+    margin: 50px auto;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color:#fff;
+    width: fit-content;
+    transition: background 0.5s;
+    background: #6f4040;
+    
+}
+
+.btn:hover{
+    background: #ababab;
+    color: black;
+
+}
+
+.contact-right form{
+    width: 100%;
+}
+
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 6px;
+
+}
+/*
+.portfolio-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:100px;
+    
+}
+
+.seemore-btn{
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 10px 25px;
+    background: #ddcccc;
+    
+}
+
+.seemore-btn:hover{
+    background: #8d6060;
+}
+*/
+
+
+
+
+
+
+
+
+
