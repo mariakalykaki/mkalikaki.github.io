@@ -18,13 +18,18 @@ html{
 /*card layout CSS*/
 
 
-
+#portfolio-section{
+    margin-left: 20px;
+    margin-right: 20px;
+    
+}
 
 .card-image{
     width: 100%;
     display: block;
     min-height: 260px;
     max-height: 260px;
+    
 }
 
 .cards{
@@ -45,12 +50,13 @@ html{
     font-size: 0.9em;
     padding: 15px;
     background: #dac3c3;
-    min-height: 195px;
-    max-height: 195px;
+    min-height: 235px;
+    max-height: 235px;
 }
 
 .card-content p {
     color: black;
+    margin-top: 15px;
 }
 .card-content h2{
     color: black;
@@ -89,7 +95,7 @@ html{
     background: #ddcccc;
     position: absolute;
     margin-top: 100px;
-    margin-left: 600px; /* i have to make it responisve with media*/
+    margin-left: 42%; /* i have to make it responisve with media*/
     
     
 }
@@ -128,11 +134,11 @@ html{
 
 @media(max-width:991px){
     .mywork-title{
-        margin-left: 200px;
+        margin-left: 40%;
     }
 
     .seemore-btn{
-        margin-left: 200px;
+        margin-left: 35%;
     }
 }
 
@@ -496,21 +502,24 @@ header{
     justify-content: center;
     align-items: center;
     
+    
 }
 
 .contact-left{
     flex-basis: 35%;
+    margin-top: 150px;
 }
 
 .contact-left h1{
     color: #fff;
+    
 }
 .contact-right{
     flex-basis: 60%;
 }
 
 .contact-left p{
-    margin-top: 30px;
+    margin-top: 60px;
     color: #fff;
 }
 
@@ -519,11 +528,13 @@ header{
     margin-right: 15px;
     margin-bottom: 15px;
     font-size: 20px;
+   
 }
 
 .social-icons{
     margin-top: 30px;
     margin-bottom: 15px;
+    
 }
 
 .social-icons a{
@@ -575,9 +586,15 @@ form input, form textarea{
     margin: 15px 0;
     border-radius: 6px;
     background-color: #ababab;
+   
+    
     
 
 }
+
+
+
+
 /*
 .portfolio-section{
     display: flex;
